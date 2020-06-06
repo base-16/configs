@@ -3,8 +3,33 @@ set mouse=a
 set autoindent
 set tabstop=4
 set cursorline
-highlight cursorline guibg=#E9EFF8
-highlight visual guibg=#ADD6FF
+highlight SpecialKey guifg = #000000
+highlight ErrorMsg guibg = #FF0000
+highlight Search guibg = #F3FF0F
+highlight LineNr guifg = #000000
+highlight CursorLineNr guifg = #000000
+highlight Visual guibg = #ADD6FF
+highlight WarningMsg guifg = #FF0000
+highlight CursorLine guibg = #E9EFF8
+highlight MatchParen guibg = #F3FF0F
+highlight Comment guifg = #808080
+highlight Constant guifg = #0D98BA
+highlight Special gui = bold
+highlight PreProc guifg = #008000
+highlight Type term = NONE gui = NONE guifg = #0000E6
+highlight Error guibg = #FF0000
+highlight String guifg = #944900
+highlight Character guifg = #CE7B00
+highlight Number guifg = #0D98BA
+highlight Boolean guifg = #0D98BA
+highlight Float guifg = #0D98BA
+highlight Operator gui = bold guifg = #FFA500
+highlight Include guifg = #008000
+highlight Define guifg = #008000
+highlight cIncluded guifg = #8000FF
+highlight cLabel guifg = #0000E6
+highlight cConditional guifg = #A020F0
+highlight cRepeat guifg = #A020F0
 "set linespace=0
 "set list lcs=tab:\|\ 
 set list lcs=tab:\¦\ 
