@@ -14,8 +14,14 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(font-lock-builtin-face ((t (:foreground "#008000"))))
  '(font-lock-comment-face ((t (:foreground "#888888"))))
- '(font-lock-string-face ((t (:foreground "#B22222"))))
+ '(font-lock-constant-face ((t (:foreground "#0D98BA"))))
+ '(font-lock-keyword-face ((t (:foreground "#A020F0"))))
+ '(font-lock-preprocessor-face ((t (:inherit font-lock-builtin-face))))
+ '(font-lock-string-face ((t (:foreground "#CE7B00"))))
+ '(font-lock-type-face ((t (:foreground "#0000E6"))))
+ '(font-lock-variable-name-face ((t (:foreground "#944900"))))
  '(show-paren-match ((t (:background "#F3FF0F")))))
 (set-default-font "Andale Mono-14")
 (set-face-attribute 'region nil :background "#ADD6FF")
