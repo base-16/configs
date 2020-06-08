@@ -67,7 +67,7 @@
 
   <!-- Constants -->
   <style name="def:constant"                foreground="#CE7B00"/>
-  <style name="def:special-char"            foreground="violet"/>
+  <style name="def:special-char"            foreground="#6A5ACD" bold="true"/>
 
   <!-- Identifiers -->
   <style name="def:identifier"              foreground="cyan"/>
@@ -105,7 +105,7 @@
   <style name="diff:diff-file"              use-style="def:type"/>
 
   <style name="xml:tags"                    foreground="cyan"/>
-  <style name="xml:attribute-name"          foreground="violet"/>
+  <style name="xml:attribute-name"          foreground="#6A5ACD"/>
   <style name="xml:namespace"               foreground="green" bold="false"/>
 
   <style name="js:object"                   foreground="#2E8B57" bold="false"/>
