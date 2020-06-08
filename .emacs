@@ -15,14 +15,15 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(font-lock-builtin-face ((t (:foreground "#008000"))))
- '(font-lock-comment-face ((t (:foreground "#888888"))))
+ '(font-lock-comment-face ((t (:foreground "#808080"))))
  '(font-lock-constant-face ((t (:foreground "#0D98BA"))))
  '(font-lock-keyword-face ((t (:foreground "#A020F0"))))
  '(font-lock-preprocessor-face ((t (:inherit font-lock-builtin-face))))
  '(font-lock-string-face ((t (:foreground "#CE7B00"))))
  '(font-lock-type-face ((t (:foreground "#0000E6"))))
  '(font-lock-variable-name-face ((t (:foreground "#944900"))))
- '(show-paren-match ((t (:background "#F3FF0F")))))
+ '(show-paren-match ((t (:background "#F3FF0F"))))
+ '(show-paren-mismatch ((t (:background "#FF0000" :foreground "#FFFFFF" :weight bold)))))
 (set-default-font "Andale Mono-14")
 (set-face-attribute 'region nil :background "#ADD6FF")
 (global-linum-mode 1)
