@@ -14,10 +14,10 @@ highlight CursorLine guibg = #E9EFF8
 highlight MatchParen guibg = #F3FF0F
 highlight Comment guifg = #808080
 highlight Constant guifg = #0D98BA
-highlight Special gui = bold
+highlight Special term = bold gui = bold
 highlight PreProc guifg = #008000
 highlight Type term = NONE gui = NONE guifg = #0000E6
-highlight Error guibg = #FF0000
+highlight Error term = bold gui = bold guibg = #FF0000
 highlight String guifg = #944900
 highlight Character guifg = #CE7B00
 highlight Number guifg = #0D98BA
