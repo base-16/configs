@@ -49,10 +49,9 @@
   <style name="background-pattern"          background="#f3f3f3"/>
   <style name="selection"                   foreground="#000000" background="#ADD6FF"/>
   <style name="selection-unfocused"         foreground="#000000" background="#E5EBF1"/>
-  
 
   <!-- Bracket Matching -->
-  <style name="bracket-match"               foreground="#000000" background="#00FFAA" bold="false"/>
+  <style name="bracket-match"               foreground="#000000" background="#F3FF0F" bold="false"/>
   <style name="bracket-mismatch"            foreground="white" background="red" bold="false"/>
 
   <!-- Right Margin -->
@@ -124,4 +123,5 @@
   <style name="Others 3"                    foreground="#6A5ACD"/>
 
 </style-scheme>
+
 <!-- /usr/share/gtksourceview-3.0/styles -->
