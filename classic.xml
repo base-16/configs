@@ -52,7 +52,7 @@
 
   <!-- Bracket Matching -->
   <style name="bracket-match"               foreground="#000000" background="#F3FF0F" bold="false"/>
-  <style name="bracket-mismatch"            foreground="white" background="red" bold="false"/>
+  <style name="bracket-mismatch"            foreground="#FFFFFF" background="#FF0000" bold="true"/>
 
   <!-- Right Margin -->
   <style name="right-margin"                foreground="#000000" background="#000000"/>
@@ -61,8 +61,8 @@
   <style name="search-match"                background="yellow"/>
 
   <!-- Comments -->
-  <style name="def:comment"                 foreground="gray"/>
-  <style name="def:shebang"                 foreground="gray" bold="false"/>
+  <style name="def:comment"                 foreground="#808080"/>
+  <style name="def:shebang"                 foreground="#808080" bold="false"/>
   <style name="def:doc-comment-element"     italic="true"/>
 
   <!-- Constants -->
