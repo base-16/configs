@@ -3,6 +3,8 @@ set mouse=a
 set autoindent
 set tabstop=4
 set cursorline
+set wrap!
+set guioptions+=b
 highlight SpecialKey guifg = #000000
 highlight ErrorMsg guibg = #FF0000
 highlight Search guibg = #F3FF0F
