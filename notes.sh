@@ -15,11 +15,11 @@ xxd -b file
 ping $1 -s 65507 127.0.0.1
 
 sudo apt-get install xdotool
-xdotool click --repeat X --delay X 1
+xdotool click --repeat * --delay * 1
 
 sudo apt-get install cnee
-cnee --record -o a.xnr --mouse --keyboard --events-to-record X --time X
-cnee --replay -f a.xnr --time X
+cnee --record -o a.xnr --mouse --keyboard --events-to-record X --time *
+cnee --replay -f a.xnr --time *
 
 sudo apt-get install wine
 wine a.exe
@@ -72,3 +72,5 @@ curl icanhazip.com
 curl ipecho.net/plain
 
 echo -ne "n\0m\0k" >> file
+
+ffmpeg -i ".m3u8" -map p:* -c copy -bsf:a aac_adtstoasc file.mp4
