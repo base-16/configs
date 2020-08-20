@@ -73,4 +73,4 @@ curl ipecho.net/plain
 
 echo -ne "n\0m\0k" >> file
 
-ffmpeg -i ".m3u8" -map p:* -c copy -bsf:a aac_adtstoasc file.mp4
+cat $(find ./ -name "*.ts" | sort -V) > file.ts
