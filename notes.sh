@@ -73,7 +73,7 @@ curl ipecho.net/plain
 
 sudo apt-get install img2pdf
 img2pdf *.jpg --output file.pdf
-for ((a=1; a<=255; a++)) do let b=$a && cd "directory $b" && img2pdf *.jpg --output $b.pdf && mv $b.pdf .. && cd ..; done
+for ((a=1; a<=X; a++)) do let b=$a && cd "directory $b" && img2pdf *.jpg --output $b.pdf && mv $b.pdf .. && cd ..; done
 
 sudo apt-get install pdftk
 pdftk *.pdf cat output file.pdf
