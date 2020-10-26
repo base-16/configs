@@ -1,0 +1,12 @@
+UXTerm*VT100.initialFont: 5
+UXTerm*locale: true
+UXTerm*utf8: 1
+UXTerm*allowBoldFonts: false
+UXTerm*cursorBlink: true
+UXTerm*selectToClipboard: true
+UXTerm*rightScrollBar: true
+UXTerm*scrollBar: true
+UXTerm*foreground: #e5e9f0
+UXTerm*background: #2e3440
+UXTerm*cursorColor: #5e81ac
+! xrdb -merge /etc/X11/Xresources
