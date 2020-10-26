@@ -84,3 +84,5 @@ cat $(find ./ -name "*.ts" | sort -V) > file.ts
 find -type f -exec mv -v {} . \;
 
 echo -ne "n\0m\0k" >> file
+
+free -m && ps -eo size,pid,user,command --sort -size | awk '{ hr=$1/1024 ; printf("%13.2f MB ",hr) } { for ( x=4 ; x<=NF ; x++ ) { printf("%s ",$x) } print "" }' | cut -d "" -f2 | cut -d "-" -f1
