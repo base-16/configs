@@ -6,6 +6,7 @@ xrandr -q
 xrandr --addmode VGA-1 "new"
 xrandr --output VGA-1 --mode "new"
 
+od file
 hexdump file
 
 ping $1 -s 65507 127.0.0.1
