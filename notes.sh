@@ -89,6 +89,7 @@ emerge --ask media-sound/alsa-utils
 emerge --ask x11-terms/xterm
 emerge --ask x11-wm/i3
 emerge --ask x11-misc/i3status
+emerge --ask media-gfx/scrot
 
 # https://wiki.gentoo.org/wiki/Handbook:AMD64/Full/Installation
 # https://wiki.gentoo.org/wiki/AMDGPU
