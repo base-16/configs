@@ -61,6 +61,7 @@ echo -ne "n\0m\0k" >> file
 free -m && ps -eo size,pid,user,command --sort -size | awk '{ hr=$1/1024 ; printf("%13.2f MB ",hr) } { for ( x=4 ; x<=NF ; x++ ) { printf("%s ",$x) } print "" }' | cut -d "" -f2 | cut -d "-" -f1
 
 # /etc/init.d
+rc-update add dbus default
 rc-update add pulseaudio boot
 rc-update add swapon default
 
@@ -84,8 +85,11 @@ eselect news read
 ls /var/db/pkg/*
 emerge world -ep
 
+gpasswd -a username tty
+
 emerge --ask sys-apps/lm-sensors
 emerge --ask media-sound/alsa-utils
+emerge --ask sys-apps/dbus
 emerge --ask x11-terms/xterm
 emerge --ask x11-wm/i3
 emerge --ask x11-misc/i3status
