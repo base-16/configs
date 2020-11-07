@@ -60,6 +60,10 @@ echo -ne "n\0m\0k" >> file
 
 free -m && ps -eo size,pid,user,command --sort -size | awk '{ hr=$1/1024 ; printf("%13.2f MB ",hr) } { for ( x=4 ; x<=NF ; x++ ) { printf("%s ",$x) } print "" }' | cut -d "" -f2 | cut -d "-" -f1
 
+exec ./new.sh
+exec xrdb -merge /etc/X11/Xresources
+exec "setxkbmap -layout tr,us"
+
 emerge --sync
 emerge -avuDN --with-bdeps y --keep-going world
 etc-update
@@ -71,3 +75,4 @@ eselect news read
 
 ls /var/db/pkg/*
 emerge world -ep
+
