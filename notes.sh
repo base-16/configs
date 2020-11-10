@@ -62,7 +62,7 @@ free -m && ps -eo size,pid,user,command --sort -size | awk '{ hr=$1/1024 ; print
 
 # /etc/init.d
 rc-update add dbus default
-rc-update add pulseaudio boot
+rc-update add pulseaudio default
 rc-update add swapon default
 
 # /etc/X11/xinit/xinitrc
@@ -72,6 +72,9 @@ exec i3
 exec ./new.sh
 exec xrdb -merge /etc/X11/Xresources
 exec "setxkbmap -layout tr,us"
+bindsym Ctrl+$mod+e exec "setxkbmap us"
+bindsym Ctrl+$mod+t exec "setxkbmap tr"
+bindsym Shift+$mod+s exec "scrot"
 
 emerge --sync
 emerge -avuDN --with-bdeps y --keep-going world
