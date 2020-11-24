@@ -119,6 +119,14 @@ cd /mnt/vdi
 umount /dev/nbd0pX
 qemu-nbd --disconnect /dev/nbd0
 
+equery w X
+ebuild /var/db/repos/gentoo/X/X.ebuild unpack
+cd /var/tmp/portage/X/X
+ebuild /var/db/repos/gentoo/X/X.ebuild compile
+ebuild /var/db/repos/gentoo/X/X.ebuild install
+ebuild /var/db/repos/gentoo/X/X.ebuild qmerge
+ebuild /var/db/repos/gentoo/X/X.ebuild clean
+
 emerge --ask sys-apps/lm-sensors
 emerge --ask media-sound/alsa-utils
 emerge --ask net-dns/bind-tools
