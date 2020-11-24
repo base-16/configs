@@ -136,5 +136,6 @@ emerge --ask media-gfx/scrot
 # https://wiki.gentoo.org/wiki/PulseAudio
 # https://wiki.gentoo.org/wiki/Xorg/Guide
 # https://wiki.gentoo.org/wiki/QEMU
+# https://wiki.gentoo.org/wiki/VirtualBox
 # https://wiki.gentoo.org/wiki/Android_USB_Tethering
 # https://wiki.gentoo.org/wiki/Iphone_USB_Tethering
