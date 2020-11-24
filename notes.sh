@@ -16,6 +16,10 @@ xdotool click --repeat X --delay X 1
 cnee --record -o a.xnr --mouse --keyboard --events-to-record X --time X
 cnee --replay -f a.xnr --time X
 
+scrot -s '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/shots/screenshot.png'
+
+wine ".wine/drive_c/Program Files (x86)/Notepad++/notepad++.exe" $HOME/$1
+
 wine a.exe
 wineconsole --backend=user a.exe
 winecfg
