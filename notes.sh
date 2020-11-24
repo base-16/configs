@@ -56,9 +56,21 @@ cat $(find ./ -name "*.ts" | sort -V) > file.ts
 
 find -type f -exec mv -v {} . \;
 
+tr -s " " < file > file2
+
+while read value; do
+	echo "$value" | tr "\t" " "
+done <$1> $2
+
 echo -ne "n\0m\0k" >> file
 
 free -m && ps -eo size,pid,user,command --sort -size | awk '{ hr=$1/1024 ; printf("%13.2f MB ",hr) } { for ( x=4 ; x<=NF ; x++ ) { printf("%s ",$x) } print "" }' | cut -d "" -f2 | cut -d "-" -f1
+
+#!/sbin/openrc-run
+pulseaudio --system
+
+#!/sbin/openrc-run
+swapon /dev/sda3
 
 # /etc/init.d
 rc-update add dbus default
