@@ -45,6 +45,10 @@ git push origin master
 ifconfig
 ip addr
 
+dig +short myip.opendns.com @resolver1.opendns.com
+dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
+dig TXT +short o-o.myaddr.l.google.com @ns1.google.com | awk -F'"' '{ print $2}'
+host myip.opendns.com resolver1.opendns.com
 curl ifconfig.me
 curl ifconfig.co
 curl icanhazip.com
@@ -116,6 +120,7 @@ umount /dev/nbd0pX
 qemu-nbd --disconnect /dev/nbd0
 
 emerge --ask sys-apps/lm-sensors
+emerge --ask net-dns/bind-tools
 emerge --ask media-sound/alsa-utils
 emerge --ask sys-apps/dbus
 emerge --ask x11-terms/xterm
