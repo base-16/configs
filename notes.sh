@@ -81,8 +81,8 @@ rc-update add swapon default
 exec i3
 
 # $HOME/.config/i3/config
-exec ./new.sh
-exec xrdb -merge /etc/X11/Xresources
+exec "./new.sh"
+exec "xrdb -merge /etc/X11/Xresources"
 exec "setxkbmap -layout tr,us"
 bindsym Ctrl+$mod+e exec "setxkbmap us"
 bindsym Ctrl+$mod+t exec "setxkbmap tr"
