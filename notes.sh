@@ -120,8 +120,8 @@ umount /dev/nbd0pX
 qemu-nbd --disconnect /dev/nbd0
 
 emerge --ask sys-apps/lm-sensors
-emerge --ask net-dns/bind-tools
 emerge --ask media-sound/alsa-utils
+emerge --ask net-dns/bind-tools
 emerge --ask sys-apps/dbus
 emerge --ask x11-terms/xterm
 emerge --ask x11-wm/i3
