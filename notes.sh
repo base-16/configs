@@ -102,6 +102,15 @@ emerge world -ep
 
 gpasswd -a username tty
 
+modprobe nbd
+modprobe nbd max_part=16
+qemu-nbd -c /dev/nbd0 "file.vdi"
+mkdir /mnt/vdi
+mount /dev/nbd0pX /mnt/vdi
+cd /mnt/vdi
+umount /dev/nbd0pX
+qemu-nbd --disconnect /dev/nbd0
+
 emerge --ask sys-apps/lm-sensors
 emerge --ask media-sound/alsa-utils
 emerge --ask sys-apps/dbus
