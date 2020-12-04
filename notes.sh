@@ -142,6 +142,10 @@ emerge --ask x11-terms/xterm
 emerge --ask x11-wm/i3
 emerge --ask x11-misc/i3status
 emerge --ask media-gfx/scrot
+USE="xephyr kdrive" emerge --ask x11-base/xorg-server
+# /hw/kdrive/ephyr/hostx.c
+# - HostX.visual->visual_id,
+# + XCB_COPY_FROM_PARENT,
 
 # https://wiki.gentoo.org/wiki/Handbook:AMD64/Full/Installation
 # https://wiki.gentoo.org/wiki/AMDGPU
