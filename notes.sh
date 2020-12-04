@@ -57,6 +57,8 @@ curl ipecho.net/plain
 img2pdf *.jpg --output file.pdf
 for ((a=1; a<=X; a++)) do let b=$a && cd "directory $b" && img2pdf *.jpg --output $b.pdf && mv $b.pdf .. && cd ..; done
 
+pdfunite 1.pdf 2.pdf 3.pdf file.pdf
+
 pdftk *.pdf cat output file.pdf
 pdftk $(find ./ -name "*.pdf" | sort -V) cat output file.pdf
 
@@ -71,6 +73,10 @@ while read value; do
 done <$1> $2
 
 echo -ne "n\0m\0k" >> file
+
+# -device usb-ehci,id=usb,bus=pci.0,addr=0x4 for USB 2.0
+# -device nec-usb-xhci,id=usb,bus=pci.0,addr=0x4 for USB 3.0
+*.sh -boot d -drive file=Win10.iso,media=cdrom -drive file=virtio.iso,media=cdrom -device qemu-xhci,id=xhci -device usb-tablet,bus=xhci.0
 
 free -m && ps -eo size,pid,user,command --sort -size | awk '{ hr=$1/1024 ; printf("%13.2f MB ",hr) } { for ( x=4 ; x<=NF ; x++ ) { printf("%s ",$x) } print "" }' | cut -d "" -f2 | cut -d "-" -f1
 
@@ -92,6 +98,7 @@ exec i3
 exec "./new.sh"
 exec "xrdb -merge /etc/X11/Xresources"
 exec "setxkbmap -layout tr,us"
+exec alias gman='gman() { man $1 >/tmp/t;gedit /tmp/t ;}; gman'
 bindsym Ctrl+$mod+e exec "setxkbmap us"
 bindsym Ctrl+$mod+t exec "setxkbmap tr"
 bindsym Shift+$mod+s exec "scrot"
