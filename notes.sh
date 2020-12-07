@@ -160,3 +160,4 @@ USE="xephyr kdrive" emerge --ask x11-base/xorg-server
 # https://wiki.gentoo.org/wiki/VirtualBox
 # https://wiki.gentoo.org/wiki/Android_USB_Tethering
 # https://wiki.gentoo.org/wiki/Iphone_USB_Tethering
+# https://wiki.gentoo.org/wiki/Knowledge_Base:Accepting_a_keyword_for_a_single_package
