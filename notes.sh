@@ -120,7 +120,7 @@ emerge world -ep
 gpasswd -a username tty
 
 modprobe nbd
-modprobe nbd max_part=16
+# or modprobe nbd max_part=16
 qemu-nbd -c /dev/nbd0 "file.vdi"
 mkdir /mnt/vdi
 mount /dev/nbd0pX /mnt/vdi
