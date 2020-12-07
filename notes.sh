@@ -98,10 +98,12 @@ exec i3
 exec "./new.sh"
 exec "xrdb -merge /etc/X11/Xresources"
 exec "setxkbmap -layout tr,us"
-exec alias gman='gman() { man $1 >/tmp/t;gedit /tmp/t ;}; gman'
 bindsym Ctrl+$mod+e exec "setxkbmap us"
 bindsym Ctrl+$mod+t exec "setxkbmap tr"
 bindsym Shift+$mod+s exec "scrot"
+
+# $HOME/.bashrc
+alias pman='pman() { man -Tpdf $1 > /tmp/man.pdf; google-chrome-stable --incognito /tmp/man.pdf ;}; pman'
 
 emerge --sync
 emerge -avuDN --with-bdeps y --keep-going world
