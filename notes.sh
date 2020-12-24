@@ -106,7 +106,7 @@ bindsym Shift+$mod+s exec "scrot"
 alias pman='pman() { man -Tpdf $1 > /tmp/man.pdf; google-chrome-stable --incognito /tmp/man.pdf ;}; pman'
 
 emerge --sync
-emerge -avuDN --with-bdeps y --keep-going world
+USE="elogind X aqua" emerge -avuDN --with-bdeps y --keep-going world
 etc-update
 emerge -av --depclean
 revdep-rebuild
