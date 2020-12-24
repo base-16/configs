@@ -101,6 +101,10 @@ exec "setxkbmap -layout tr,us"
 bindsym Ctrl+$mod+e exec "setxkbmap us"
 bindsym Ctrl+$mod+t exec "setxkbmap tr"
 bindsym Shift+$mod+s exec "scrot"
+mode "Passthrough Mode - Press Alt+F12 to exit" {
+	bindsym $mod+F12 mode "default"
+}
+bindsym $mod+F12 mode "Passthrough Mode - Press Alt+F12 to exit"
 
 # $HOME/.bashrc
 alias pman='pman() { man -Tpdf $1 > /tmp/man.pdf; google-chrome-stable --incognito /tmp/man.pdf ;}; pman'
