@@ -1,0 +1,286 @@
+{
+    "custom-styles": {
+        "Alerts": {
+            "Alert Level 1": {
+                "selected-text-color": "#000000"
+            },
+            "Alert Level 2": {
+                "selected-text-color": "#000000"
+            },
+            "Alert Level 3": {
+                "selected-text-color": "#000000"
+            }
+        },
+        "C": {
+            "Char": {
+                "text-color": "#ce7b00"
+            },
+            "Prep. Lib": {
+                "text-color": "#009000"
+            },
+            "String": {
+                "text-color": "#944900"
+            },
+            "String Char": {
+                "bold": true,
+                "text-color": "#854400"
+            },
+            "Symbol": {
+                "text-color": "#644a9b"
+            }
+        },
+        "Doxygen": {
+            "Attention": {
+                "bold": false
+            },
+            "Dot Graph": {
+                "italic": false,
+                "selected-text-color": "#000000"
+            },
+            "Entities": {
+                "bold": false,
+                "italic": false
+            },
+            "Formulas": {
+                "italic": false,
+                "selected-text-color": "#000000"
+            },
+            "HTML Tag": {
+                "bold": false
+            },
+            "Message Sequence Chart": {
+                "italic": false,
+                "selected-text-color": "#000000"
+            },
+            "Note": {
+                "bold": false
+            },
+            "Tags": {
+                "bold": false
+            },
+            "Todo": {
+                "bold": false
+            },
+            "Warning": {
+                "bold": false
+            },
+            "Word": {
+                "bold": false
+            }
+        },
+        "SPDX-Comments": {
+            "SPDX Deprecated License": {
+                "italic": false
+            },
+            "SPDX Deprecated License Exception": {
+                "italic": false
+            },
+            "SPDX License": {
+                "italic": false
+            },
+            "SPDX License Exception": {
+                "italic": false
+            },
+            "SPDX License Expression Operator": {
+                "italic": false
+            },
+            "SPDX Tag": {
+                "italic": false
+            },
+            "SPDX Value": {
+                "italic": false
+            }
+        }
+    },
+    "editor-colors": {
+        "BackgroundColor": "#f7f7f7",
+        "BracketMatching": "#f3ff0f",
+        "CodeFolding": "#94caef",
+        "CurrentLine": "#e9e8ff",
+        "CurrentLineNumber": "#c90000",
+        "IconBorder": "#f0f0f0",
+        "IndentationLine": "#000000",
+        "LineNumbers": "#000000",
+        "MarkBookmark": "#0000ff",
+        "MarkBreakpointActive": "#ff0000",
+        "MarkBreakpointDisabled": "#ff00ff",
+        "MarkBreakpointReached": "#f3ff0f",
+        "MarkError": "#ff0000",
+        "MarkExecution": "#a0a0a4",
+        "MarkWarning": "#ff00ff",
+        "ModifiedLines": "#fdbc4b",
+        "ReplaceHighlight": "#00ff00",
+        "SavedLines": "#2ecc71",
+        "SearchHighlight": "#f3ff0f",
+        "Separator": "#000000",
+        "SpellChecking": "#bf0303",
+        "TabMarker": "#d2d2d2",
+        "TemplateBackground": "#d6d2d0",
+        "TemplateFocusedPlaceholder": "#76da98",
+        "TemplatePlaceholder": "#baf8ce",
+        "TemplateReadOnlyPlaceholder": "#f6e6e6",
+        "TextSelection": "#add6ff",
+        "WordWrapMarker": "#ededed"
+    },
+    "metadata": {
+        "name": "Custom",
+        "revision": 1
+    },
+    "text-styles": {
+        "Alert": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#bf0303"
+        },
+        "Annotation": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#ca60ca"
+        },
+        "Attribute": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#0057ae"
+        },
+        "BaseN": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#0d98ba"
+        },
+        "BuiltIn": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#644a9b"
+        },
+        "Char": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#924c9d"
+        },
+        "Comment": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#808080"
+        },
+        "CommentVar": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#0095ff"
+        },
+        "Constant": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#b08000"
+        },
+        "ControlFlow": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#a020f0"
+        },
+        "DataType": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#0000ff"
+        },
+        "DecVal": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#0d98ba"
+        },
+        "Documentation": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#607880"
+        },
+        "Error": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#bf0303"
+        },
+        "Extension": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#0095ff"
+        },
+        "Float": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#0d98ba"
+        },
+        "Function": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#644a9b"
+        },
+        "Import": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#ff5500"
+        },
+        "Information": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#b08000"
+        },
+        "Keyword": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#ff5500"
+        },
+        "Normal": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#1f1c1b"
+        },
+        "Operator": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#1f1c1b"
+        },
+        "Others": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#006e28"
+        },
+        "Preprocessor": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#004000"
+        },
+        "RegionMarker": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#0057ae"
+        },
+        "SpecialChar": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#3daee9"
+        },
+        "SpecialString": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#ff5500"
+        },
+        "String": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#bf0303"
+        },
+        "Variable": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#0057ae"
+        },
+        "VerbatimString": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#bf0303"
+        },
+        "Warning": {
+            "selected-background-color": "#add6ff",
+            "selected-text-color": "#000000",
+            "text-color": "#bf0303"
+        }
+    }
+}
