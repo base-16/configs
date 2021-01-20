@@ -110,7 +110,7 @@ bindsym $mod+F12 mode "Passthrough Mode - Press Alt+F12 to exit"
 alias pman='pman() { man -Tpdf $1 > /tmp/man.pdf; google-chrome-stable --incognito /tmp/man.pdf ;}; pman'
 
 emerge --sync
-USE="elogind X aqua vnc pulseaudio gtk qt5" emerge -avuDN --with-bdeps y --keep-going world
+USE="elogind X aqua vnc pulseaudio ffmpeg gtk qt5" emerge -avuDN --with-bdeps y --keep-going world
 etc-update
 emerge -av --depclean
 revdep-rebuild
